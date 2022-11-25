@@ -504,7 +504,9 @@ function bixt_settings_page() {
                                                     $val = var_export($val, 1);
                                                 }
 
-                                                echo "$key: $val\n";
+	                                            $key_esc = esc_html($key);
+	                                            $val_esc = esc_html($val);
+                                                echo "$key_esc: $val_esc\n";
                                             }
                                             ?></textarea>
                                         </div>
@@ -512,45 +514,6 @@ function bixt_settings_page() {
                                 </div>
                             </div> <!-- .inside -->
                          </div> <!-- .postbox --> <!-- /quick-contact -->
-
-                         <div class="postbox">
-                            <?php
-                                $plugin_data = bixt_get_plugin_data();
-
-                                $app_link = urlencode($plugin_data['PluginURI']);
-                                $app_title = urlencode($plugin_data['Name']);
-                                $app_descr = urlencode($plugin_data['Description']);
-                                ?>
-                                <h3>Share</h3>
-                                <p>
-                                    <!-- AddThis Button BEGIN -->
-                                <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-                                    <a class="addthis_button_facebook" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_twitter" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_google_plusone" g:plusone:count="false" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_linkedin" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_email" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_myspace" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_google" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_digg" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_delicious" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_stumbleupon" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_tumblr" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_favorites" addthis:url="<?php echo $app_link ?>" addthis:title="<?php echo $app_title ?>" addthis:description="<?php echo $app_descr ?>"></a>
-                                    <a class="addthis_button_compact"></a>
-                                </div>
-                                <!-- The JS code is in the footer -->
-
-                                <script type="text/javascript">
-                                    var addthis_config = {"data_track_clickback": true};
-                                    var addthis_share = {
-                                        templates: {twitter: 'Check out {{title}} #WordPress #plugin at {{lurl}} (via @orbisius)'}
-                                    }
-                                </script>
-                                <!-- AddThis Button START part2 -->
-                                <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js"></script>
-                                <!-- AddThis Button END part2 -->
-                        </div> <!-- .postbox -->
 
                     </div> <!-- .meta-box-sortables -->
 
