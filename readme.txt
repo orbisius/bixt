@@ -61,6 +61,9 @@ n/a
 
 = 1.0.6 =
 * Prepped a new version.
+* Fixed links to be https
+* correct links to orbisius (was previous club orbisius)
+* Updated js to load from bixt.net site and not from another orbisius subdomain
 
 = 1.0.5 =
 * Do not render in ajax
