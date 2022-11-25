@@ -205,7 +205,7 @@
             var link = document.createElement('a');
 
             link.setAttribute('target', '_blank');
-            //link.setAttribute('title', 'title');
+            link.setAttribute('title', 'Affiliate link');
             link.setAttribute('href', parse_params.target_url);
             link.setAttribute('rel', "external nofollow norewrite");
 
