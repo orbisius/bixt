@@ -4,7 +4,7 @@ Donate link: https://paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7A
 Tags: free,free affiliate, affiliate,affiliate marketing,context link,links,affiliately,commission,commissions, affiliates, affiliate links, affiliate links generator, clickbank,click bank, amazon associates, amazon affiliate,shareasale,e-junkie
 Requires at least: 2.6
 Tested up to: 6.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 
 Bixt (through bixt.net service) replaces keywords or keyword phrases with affiliate links that you define per keyword.
