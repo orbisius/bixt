@@ -5,6 +5,7 @@ Tags: free,free affiliate, affiliate,affiliate marketing,context link,links,affi
 Requires at least: 2.6
 Tested up to: 6.1
 Stable tag: 1.0.6
+Requires PHP: 5.6
 License: GPLv2 or later
 
 Bixt (through bixt.net service) replaces keywords or keyword phrases with affiliate links that you define per keyword.
