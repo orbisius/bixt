@@ -398,8 +398,6 @@ function bixt_settings_page() {
                                        data-align="right" data-show-count="false">Follow @orbisius</a>
                                 <!-- /Twitter: Orbisius_Follow:js -->
 
-                                &nbsp;
-
                                 <!-- Twitter: Tweet:js -->
                                 <a href="https://twitter.com/share" class="twitter-share-button"
                                    data-lang="en" data-text="Checkout Bixt #WordPress #plugin and make more money with affiliate commissions"
@@ -413,9 +411,6 @@ function bixt_settings_page() {
                                     |
                                     More <a href="https://orbisius.com/products/?utm_source=bixt&utm_medium=plugin-settings-support&utm_campaign=product"
                                     target="_blank" title="[new window]">Products</a>
-                                    <!--|
-                                     <a href="https://docs.google.com/viewer?url=https%3A%2F%2Fdl.dropboxusercontent.com%2Fs%2Fwz83vm9841lz3o9%2FOrbisius_LikeGate_Documentation.pdf" target="_blank">Documentation</a>
-                                    -->
                                 </span>
                             </div>
                         </div> <!-- .postbox -->
@@ -424,13 +419,6 @@ function bixt_settings_page() {
                             <?php
                             $current_user = wp_get_current_user();
                             $email = empty($current_user->user_email) ? '' : $current_user->user_email;
-                            $quick_form_action = is_ssl()
-                                    ? 'https://ssl.orbisius.com/apps/quick-contact/'
-                                    : 'https://apps.orbisius.com/quick-contact/';
-
-                            if (!empty($_SERVER['DEV_ENV'])) {
-                                $quick_form_action = 'https://localhost/projects/quick-contact/';
-                            }
                             ?>
                             <script>
                                 var bixt_quick_contact = {
@@ -469,7 +457,7 @@ function bixt_settings_page() {
                             <h3><span>Quick Question or Suggestion</span></h3>
                             <div class="inside">
                                 <div>
-                                    <form method="post" action="<?php echo $quick_form_action; ?>" target="_blank">
+                                    <form method="post" action="https://apps.orbisius.com/quick-contact/" target="_blank">
                                         <?php
                                             global $wp_version;
 											$plugin_data = get_plugin_data(__FILE__);
