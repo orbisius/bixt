@@ -569,7 +569,6 @@ function bixt_settings_page() {
             Please do NOT use the WordPress forums or other places to seek support.
     </p></div>-->
 
-    <?php //bixt_generate_ext_content(); ?>
     <?php
 }
 
@@ -597,31 +596,6 @@ function bixt_get_plugin_data() {
     $data = array_merge($data, $plugin_data);
 
     return $data;
-}
-
-/**
- * Outputs or returns the HTML content for IFRAME promo content.
- */
-function bixt_generate_ext_content($echo = 1) {
-    $plugin_slug = basename(__FILE__);
-    $plugin_slug = str_replace('.php', '', $plugin_slug);
-    $plugin_slug = strtolower($plugin_slug); // jic
-
-    $domain = !empty($_SERVER['DEV_ENV']) ? 'https://orbclub.com.clients.com' : 'https://orbisius.com';
-
-    $url = $domain . '/wpu/content/wp/' . $plugin_slug . '/';
-
-    $buff = <<<BUFF_EOF
-    <iframe style="width:100%;min-height:300px;height: auto;" width="100%" height="480"
-            src="$url" frameborder="0" allowfullscreen></iframe>
-
-BUFF_EOF;
-
-    if ($echo) {
-        echo $buff;
-    } else {
-        return $buff;
-    }
 }
 
 /**
