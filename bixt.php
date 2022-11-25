@@ -548,7 +548,7 @@ function bixt_settings_page() {
                                     }
                                 </script>
                                 <!-- AddThis Button START part2 -->
-                                <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=lordspace"></script>
+                                <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js"></script>
                                 <!-- AddThis Button END part2 -->
                         </div> <!-- .postbox -->
 
