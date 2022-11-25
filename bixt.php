@@ -81,8 +81,8 @@ function bixt_insert_code() {
     $api_key = sha1('bixt-' . $opts['user_id'] . '-' . $dom_esc);
 
     if (!empty($opts['use_hosted'])) { // to be added as an option or not?
-        $ssl_url = 'https://ssl.orbisius.com/apps/bixt/public/2.0/';
-        $url = 'https://cdn.bixt.net/2.0/';
+	    $url = 'https://bixt.net/2.0/';
+	    $ssl_url = 'https:///bixt/public/2.0/';
     } else {
         $suffix = empty($_SERVER['DEV_ENV']) ? '.min' : '';
         $js_url = plugins_url("/assets/2.0/app$suffix.js", __FILE__);
