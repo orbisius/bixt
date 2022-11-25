@@ -297,7 +297,7 @@ function bixt_settings_page() {
                                             </td>
                                         </tr>
                                         <tr valign="top">
-                                            <th scope="row">Domain</th>
+                                            <th scope="row">Domain/Property</th>
                                             <td>
                                                 <label for="bixt_options_domain">
                                                     <input type="text" id="bixt_options_domain"
