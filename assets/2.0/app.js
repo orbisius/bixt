@@ -288,20 +288,20 @@
 
                         var result;
                         var data = node.data;
-                        var data_low = data.toLowerCase();
+                        var data_lc = data.toLowerCase();
 
                         // skip if the kwd was replaced more than 2
-                        if (data_low.indexOf(term_low) != -1 && (!(term_low in this.replace_cnt) || this.replace_cnt[term_low] < 2)) {
+                        if (data_lc.indexOf(term_low) != -1 && (!(term_low in this.replace_cnt) || this.replace_cnt[term_low] < 2)) {
                             if ((result = data.search(re)) != -1) {
                                 var new_node = document.createElement('SPAN');
                                 new_node.className += "Bixt_parent_link_container term_" + term;
                                 node.parentNode.replaceChild(new_node, node);
 
-                                result = data_low.indexOf(term_low);
+                                result = data_lc.indexOf(term_low);
                                 new_node.appendChild(document.createTextNode(data.substr(0, result)));
                                 new_node.appendChild(this.create_link(document.createTextNode(data.substr(result,term.length)), obj_params));
                                 data = data.substr(result + term.length);
-                                data_low = data_low.substr(result + term.length);
+                                data_lc = data_lc.substr(result + term.length);
 
                                 new_node.appendChild(document.createTextNode(data));
 
