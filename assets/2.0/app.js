@@ -272,7 +272,7 @@
                 var buff = container.innerHTML;
                 buff = buff.toLowerCase();
 
-                if (buff.indexOf(term_low) == -1 || !re.test(buff)) {
+                if (buff.indexOf(term_low) == -1 && !re.test(buff)) {
                     return;
                 }
             }
