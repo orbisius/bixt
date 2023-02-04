@@ -228,7 +228,7 @@
 
                 parse_params.rec.description = parse_params.rec.url;
                 parse_params.rec.description = parse_params.rec.description.replace(/.*?amazon\.\w{2,4}(?:\.\w{2,4})?\/(.*?)\/dp.*/i, '$1');
-                parse_params.rec.description = parse_params.rec.description.replace(/[-_]/ig, ' ');
+                parse_params.rec.description = parse_params.rec.description.replace(/[\-_]/ig, ' ');
             }
 
             // The tooltip must be a span in a link
