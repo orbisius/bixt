@@ -60,6 +60,10 @@ n/a
 
 == Changelog ==
 
+= 1.0.7 =
+* Made JS fixes and improvements.
+* Added css bixt_aff_link to the converted links
+
 = 1.0.6 =
 * Prepped a new version.
 * Fixed links to be https
