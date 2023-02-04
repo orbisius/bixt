@@ -204,10 +204,11 @@
         create_link : function (child, parse_params) {
             var link = document.createElement('a');
 
-            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', "external nofollow noreferrer noopener norewrite");
+            link.setAttribute('class', 'bixt_aff_link');
             link.setAttribute('title', 'Affiliate link');
             link.setAttribute('href', parse_params.target_url);
-            link.setAttribute('rel', "external nofollow norewrite");
+            link.setAttribute('target', '_blank');
 
             if (tracking) {
                 link.setAttribute('onclick', "Bixt.track({"
