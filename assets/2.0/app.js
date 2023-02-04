@@ -281,7 +281,7 @@
                 var node = container.childNodes[i];
                 var parentNode = node.parentNode ? node.parentNode.nodeName.toLowerCase() : '';
 
-                if (node.nodeType == 3) { // Node.TEXT_NODE
+                if (node.nodeType == 3) { // Node.TEXT_NODE - https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
                     if (parentNode && node.parentNode.className.indexOf('bixt_tooltip') == -1
                             && (parentNode == 'body' || parentNode == 'span' || parentNode == 'p' || parentNode == 'div')) {
                         //Bixt.Util.log('term: ' + term + ' parentNode: ' + parentNode + "\n");
